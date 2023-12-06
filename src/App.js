@@ -1,11 +1,16 @@
-import './App.css';
+import React from 'react';
+import ColorButton from './components/ColorButton';
+import withColor from './components/withColor';
 
-function App() {
+const EnhancedColorButton = withColor(ColorButton);
+
+const App = () => {
   return (
     <div className="App">
-      <hi1>Add your code here!</hi1>
+      <h1>your code here</h1>
+      <EnhancedColorButton />
     </div>
   );
-}
+};
 
 export default App;
